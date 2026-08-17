@@ -10,27 +10,28 @@ const container: React.CSSProperties = {
   padding: '0 clamp(20px, 5vw, 40px)',
 };
 
-const accentLine: React.CSSProperties = {
-  display: 'block',
-  width: '60px',
-  height: '3px',
-  background: 'var(--color-primary)',
-  borderRadius: '2px',
-  margin: '14px auto 0',
-};
-
 const teamMembers = [
   {
-    role: 'Ägare & Grundare',
-    name: 'Viktor Johannesson',
-    photo: '',
+    role: 'Ägare & VD / Projektledare',
+    name: 'Oliver',
+    initial: 'O',
+  },
+  {
+    role: 'Ledande snickare & Montör',
+    name: 'Marcus Lindqvist',
+    initial: 'M',
+  },
+  {
+    role: 'Snickare & Hantverkare',
+    name: 'Alexander Holm',
+    initial: 'A',
   },
 ];
 
 export default function About() {
   usePageTitle(
-    'Om JH Huskvalitet AB | Vår Historia och Vision',
-    'Läs om JH Huskvalitet AB. Vi är ditt lokala företag i Uppland med omnejd för mark, bygg och tomtanläggning.'
+    'Om P.N Byggentreprenad AB | Din Byggpartner i Skåne',
+    'Läs mer om P.N Byggentreprenad AB. Vi erbjuder kostnadseffektiva helhetslösningar inom bygg och entreprenad i Skåne för privatpersoner, BRF och fastighetsbolag.'
   );
   return (
     <main style={{ fontFamily: 'var(--font-family)' }}>
@@ -56,12 +57,12 @@ export default function About() {
                 margin: '0 0 16px 0',
                 lineHeight: 1.15,
               }}>
-                Om JH Huskvalitet AB
+                Om P.N Byggentreprenad AB
               </h1>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={150}>
               <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.05rem', margin: '0 auto', maxWidth: '600px' }}>
-                Med passion för kvalitet och hantverk med Uppland som hemmaplan.
+                Kostnadseffektiva helhetslösningar genom kunskap och engagemang med Skåne som hemmaplan.
               </p>
             </ScrollReveal>
           </div>
@@ -69,31 +70,34 @@ export default function About() {
       </section>
 
       {/* ── SECTION B: ABOUT STORY & HISTORY ─────────────────────────── */}
-      <section style={{ background: 'var(--color-light)', padding: '100px 0' }}>
-        <div style={{ ...container, maxWidth: '960px' }}>
+      <section style={{ background: 'var(--color-light)', padding: '90px 0' }}>
+        <div style={{ ...container, maxWidth: '1080px' }}>
           <div className="about-content-grid" style={{
             display: 'grid',
-            gridTemplateColumns: '160px 1fr',
-            gap: '48px',
+            gridTemplateColumns: 'minmax(280px, 420px) 1fr',
+            gap: '50px',
             alignItems: 'start',
           }}>
 
-            {/* Left: Logo */}
+            {/* Left: Pure Clean About Hero Photo */}
             <ScrollReveal animation="scale-in" easing="spring">
               <div style={{
                 position: 'sticky',
                 top: '120px',
+                borderRadius: '24px',
+                overflow: 'hidden',
+                boxShadow: '0 20px 45px rgba(15, 23, 42, 0.1)',
+                border: '1px solid #e2e8f0',
+                background: '#ffffff',
               }}>
                 <img
                   src={images.about.hero.url}
                   alt={images.about.hero.alt}
                   style={{
-                    width: '200px',
+                    width: '100%',
                     height: 'auto',
-                    maxHeight: '170px',
-                    objectFit: 'contain',
-                    backgroundColor: 'transparent',
-                    padding: '0',
+                    aspectRatio: '4/5',
+                    objectFit: 'cover',
                     display: 'block',
                   }}
                 />
@@ -103,15 +107,26 @@ export default function About() {
             {/* Right: Text content */}
             <div>
               <ScrollReveal animation="blur-in">
+                <span style={{
+                  color: 'var(--color-primary)',
+                  fontWeight: 700,
+                  fontSize: '0.82rem',
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  display: 'block',
+                  marginBottom: '8px',
+                }}>
+                  Om oss
+                </span>
                 <h2 style={{
                   color: 'var(--color-text-dark)',
                   fontWeight: 800,
-                  fontSize: 'clamp(2rem, 3.4vw, 2.7rem)',
+                  fontSize: 'clamp(1.9rem, 3.2vw, 2.5rem)',
                   lineHeight: 1.18,
                   letterSpacing: '-0.03em',
                   margin: '0 0 20px 0',
                 }}>
-                  Om JH Huskvalitet AB
+                  Er vision, vårt löfte
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="fade-up" delay={100}>
@@ -123,11 +138,11 @@ export default function About() {
                     margin: '0 0 20px 0',
                     fontWeight: 500,
                   }}>
-                    JH Huskvalitet AB erbjuder byggtjänster med fokus på kvalitet, noggrannhet och hållbara lösningar. Vi hjälper dig från idé till färdigt resultat med trygghet, struktur och yrkesstolthet i varje steg.
+                    P.N Byggentreprenad AB är ett modernt och professionellt byggföretag i Skåne. Vi erbjuder kostnadseffektiva helhetslösningar till ert byggprojekt genom djup yrkeskunskap, personligt engagemang och högsta hantverksstandard.
                   </p>
                   
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-dark)', margin: '28px 0 12px 0' }}>
-                    Kvalitet, noggrannhet och hållbara lösningar
+                    Byggnation för privatpersoner, BRF och fastighetsbolag
                   </h3>
                   <p style={{
                     color: 'var(--color-gray-600)',
@@ -135,7 +150,7 @@ export default function About() {
                     lineHeight: 1.8,
                     margin: '0 0 16px 0',
                   }}>
-                    Vi utför ett brett utbud av bygg och entreprenadtjänster med utgångspunkt i Uppland. Oavsett om det gäller renovering, tillbyggnad, anläggning eller nybyggnation ser vi till att projektet genomförs smidigt och med högsta standard.
+                    Vi arbetar brett mot både privatkunder, kommersiella fastighetsbolag och bostadsrättsföreningar. Vårt tjänsteutbud omfattar nybyggnation av villor och fastigheter, omfattande renoveringar, tillbyggnader och samordnade totalentreprenader.
                   </p>
                   <p style={{
                     color: 'var(--color-gray-600)',
@@ -143,7 +158,7 @@ export default function About() {
                     lineHeight: 1.8,
                     margin: '0 0 24px 0',
                   }}>
-                    Under ett och samma tak levererar vi helhetslösningar anpassade efter dina behov och önskemål. För oss är inget projekt för litet eller för stort!
+                    Med P.N Byggentreprenad AB som partner får ni en strukturerad och transparent byggprocess. Vi tar ett samlat ansvar från idé och projektering till nyckelfärdig överlämning, med tydliga avtal och strikt tids och budgetkontroll.
                   </p>
 
                   {/* Founder Quote Card */}
@@ -162,7 +177,7 @@ export default function About() {
                       lineHeight: 1.7,
                       margin: '0 0 10px 0',
                     }}>
-                      "Att få förtroendet att förverkliga våra kunders drömmar och idéer genom personligt engagemang och yrkesstolt hantverk är vad som driver oss varje dag."
+                      "Vi erbjuder kostnadseffektiva helhetslösningar till ert byggprojekt genom kunskap och engagemang. Er vision är vårt löfte oavsett projektets storlek."
                     </p>
                     <span style={{
                       color: 'var(--color-primary)',
@@ -170,7 +185,7 @@ export default function About() {
                       fontSize: '0.9rem',
                       display: 'block',
                     }}>
-                      Viktor Johannesson, Ägare och Grundare
+                      Oliver, Ägare & VD
                     </span>
                   </div>
 
@@ -185,14 +200,22 @@ export default function About() {
         </div>
       </section>
 
-
-
-
-      {/* ── SECTION D: OWNER PROFILE ──────────────────────────── */}
-      <section style={{ background: 'var(--color-light)', padding: '90px 0' }}>
+      {/* ── SECTION D: TEAM PROFILE ──────────────────────────── */}
+      <section style={{ background: '#ffffff', padding: '90px 0', borderTop: '1px solid #e2e8f0' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto', padding: '0 clamp(20px, 5vw, 40px)' }}>
-          <div style={{ textAlign: 'center', marginBottom: '44px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '48px' }}>
             <ScrollReveal animation="blur-in">
+              <span style={{
+                color: 'var(--color-primary)',
+                fontWeight: 700,
+                fontSize: '0.82rem',
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                display: 'block',
+                marginBottom: '8px',
+              }}>
+                Vårt team
+              </span>
               <h2 style={{
                 color: 'var(--color-text-dark)',
                 fontWeight: 800,
@@ -200,7 +223,7 @@ export default function About() {
                 letterSpacing: '-0.03em',
                 margin: '0 0 12px 0',
               }}>
-                Grundare & Ägare
+                Möt hantverkarna bakom P.N Byggentreprenad AB
               </h2>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={100}>
@@ -208,63 +231,68 @@ export default function About() {
                 color: 'var(--color-gray-600)',
                 fontSize: '1rem',
                 lineHeight: 1.7,
-                maxWidth: '560px',
+                maxWidth: '580px',
                 margin: '0 auto',
               }}>
-                JH Huskvalitet AB grundades och drivs av Viktor Johannesson med passion för byggkvalitet och personlig service.
+                Ett engagerat och erfaret team som brinner för kvalitet, noggrannhet och professionellt utförda byggprojekt i Skåne.
               </p>
             </ScrollReveal>
           </div>
 
           <div style={{
-            maxWidth: '380px',
-            margin: '0 auto',
-          }}>
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+            gap: '24px',
+          }} className="team-grid">
             {teamMembers.map((member, i) => (
-              <ScrollReveal key={i} animation="slide-up-fade" delay={100}>
+              <ScrollReveal key={i} animation="slide-up-fade" delay={i * 120}>
                 <div style={{
-                  background: '#ffffff',
+                  background: '#f8fafc',
                   borderRadius: '20px',
                   overflow: 'hidden',
-                  border: '1px solid #e5e7eb',
-                  boxShadow: '0 8px 30px rgba(0, 0, 0, 0.07)',
+                  border: '1px solid #e2e8f0',
+                  boxShadow: '0 6px 20px rgba(0, 0, 0, 0.04)',
                   transition: 'transform 0.3s ease, box-shadow 0.3s ease',
                   textAlign: 'center',
+                  padding: '36px 24px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  height: '100%',
+                  boxSizing: 'border-box',
                 }}>
-                  <div style={{ padding: '32px 28px' }}>
-                    <div style={{
-                      width: '64px',
-                      height: '64px',
-                      borderRadius: '50%',
-                      background: 'rgba(234, 88, 12, 0.1)',
-                      color: 'var(--color-primary)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: '1.8rem',
-                      fontWeight: 800,
-                      margin: '0 auto 16px auto',
-                    }}>
-                      V
-                    </div>
-                    <h3 style={{
-                      color: 'var(--color-text-dark)',
-                      fontWeight: 800,
-                      fontSize: '1.3rem',
-                      margin: '0 0 6px 0',
-                    }}>
-                      {member.name}
-                    </h3>
-                    <p style={{
-                      color: 'var(--color-primary)',
-                      fontSize: '0.95rem',
-                      fontWeight: 700,
-                      margin: 0,
-                      lineHeight: 1.4,
-                    }}>
-                      {member.role}
-                    </p>
+                  <div style={{
+                    width: '68px',
+                    height: '68px',
+                    borderRadius: '50%',
+                    background: 'rgba(234, 88, 12, 0.12)',
+                    color: 'var(--color-primary)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '1.7rem',
+                    fontWeight: 800,
+                    marginBottom: '16px',
+                  }}>
+                    {member.initial}
                   </div>
+                  <h3 style={{
+                    color: 'var(--color-text-dark)',
+                    fontWeight: 800,
+                    fontSize: '1.18rem',
+                    margin: '0 0 8px 0',
+                  }}>
+                    {member.name}
+                  </h3>
+                  <p style={{
+                    color: 'var(--color-primary)',
+                    fontSize: '0.9rem',
+                    fontWeight: 700,
+                    margin: 0,
+                    lineHeight: 1.4,
+                  }}>
+                    {member.role}
+                  </p>
                 </div>
               </ScrollReveal>
             ))}
@@ -276,23 +304,20 @@ export default function About() {
       <CTABanner />
 
       <style>{`
-        .about-hero-img-wrap:hover .about-hero-img {
-          transform: scale(1.03);
-        }
-        @media (max-width: 768px) {
-          .two-col { grid-template-columns: 1fr !important; gap: 40px !important; }
-          .team-grid { grid-template-columns: 1fr !important; }
+        @media (max-width: 900px) {
+          .team-grid {
+            grid-template-columns: 1fr !important;
+            max-width: 420px;
+            margin: 0 auto;
+          }
           .about-content-grid {
             grid-template-columns: 1fr !important;
-            gap: 32px !important;
+            gap: 36px !important;
           }
           .about-content-grid > *:first-child {
             display: flex;
             justify-content: center;
           }
-        }
-        @media (max-width: 1024px) {
-          .team-grid { grid-template-columns: repeat(2, 1fr) !important; }
         }
       `}</style>
     </main>

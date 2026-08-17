@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import {
   Star,
   Phone,
-  MapPin,
-  Hammer,
   CheckCircle2,
   ArrowRight,
 } from 'lucide-react';
@@ -50,8 +48,8 @@ const homeFaqItems = [
 
 export default function Home() {
   usePageTitle(
-    'JH Huskvalitet AB | Bygg och Huskvalitet i Uppland',
-    'JH Huskvalitet AB utför nybyggnation, renovering, ombyggnation och totalentreprenad i Uppland med omnejd. Kontakta oss för en kostnadsfri offert!'
+    'P.N Byggentreprenad AB | Bygg & Totalentreprenad i Skåne',
+    'P.N Byggentreprenad AB erbjuder kostnadseffektiva helhetslösningar inom bygg, nybyggnation, renovering, tillbyggnad och totalentreprenad i Skåne för privatkunder, BRF och fastighetsbolag.'
   );
 
   const heroBgRef = useRef<HTMLDivElement>(null);
@@ -183,33 +181,33 @@ export default function Home() {
             {/* Top Location Line */}
             <ScrollReveal animation="fade-down" delay={0} duration={0.6}>
               <span style={{
-                fontFamily: "'Outfit', sans-serif",
-                letterSpacing: '0.24em',
+                fontFamily: "'Oswald', 'Outfit', sans-serif",
+                letterSpacing: '0.28em',
                 textTransform: 'uppercase',
-                fontSize: 'clamp(0.7rem, 1.2vw, 0.82rem)',
-                fontWeight: 700,
-                color: 'rgba(255, 255, 255, 0.92)',
+                fontSize: 'clamp(0.75rem, 1.4vw, 0.85rem)',
+                fontWeight: 600,
+                color: 'rgba(255, 255, 255, 0.85)',
                 display: 'block',
-                marginBottom: '14px',
+                marginBottom: '16px',
               }}>
-                UPPLAND MED OMNEJD
+                SKÅNE • MALMÖ • HELSINGBORG • LUND
               </span>
             </ScrollReveal>
 
-            {/* Huge Bold Headline (H1) using Outfit font */}
+            {/* Huge Bold Headline (H1) using Bebas Neue font */}
             <ScrollReveal animation="fade-up" delay={100} duration={0.8}>
               <h1 style={{
-                fontFamily: "'Outfit', sans-serif",
+                fontFamily: "'Bebas Neue', 'Oswald', sans-serif",
                 color: '#ffffff',
-                fontSize: 'clamp(3.2rem, 7.5vw, 5.8rem)',
-                fontWeight: 900,
-                lineHeight: 0.98,
+                fontSize: 'clamp(4.2rem, 10vw, 7.8rem)',
+                fontWeight: 400,
+                lineHeight: 0.88,
                 textTransform: 'uppercase',
-                letterSpacing: '-0.01em',
+                letterSpacing: '0.04em',
                 margin: '0 0 24px 0',
-                textShadow: '0 4px 18px rgba(0, 0, 0, 0.75)',
+                textShadow: '0 4px 30px rgba(0, 0, 0, 0.9)',
               }}>
-                JH<br />HUSKVALITET<br />AB
+                P.N BYGG<br />ENTREPRENAD
               </h1>
             </ScrollReveal>
 
@@ -225,7 +223,7 @@ export default function Home() {
                 textShadow: '0 2px 12px rgba(0, 0, 0, 0.85)',
                 fontWeight: 400,
               }}>
-                Ett personligt byggföretag i Uppland med fokus på nybyggnation, renovering, ombyggnation och totalentreprenad med kvalitet i varje led.
+                Vi erbjuder kostnadseffektiva helhetslösningar till ert byggprojekt genom kunskap och engagemang! Er vision, vårt löfte.
               </p>
             </ScrollReveal>
 
@@ -244,7 +242,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
-                  href="tel:0722101075"
+                  href="tel:0723868375"
                   onClick={(e) => {
                     if (window.innerWidth > 768) {
                       e.preventDefault();
@@ -254,7 +252,7 @@ export default function Home() {
                 >
                   <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                     <Phone size={18} />
-                    Ring 072-210 10 75
+                    Ring 072-386 83 75
                   </span>
                 </Button>
               </div>
@@ -322,7 +320,7 @@ export default function Home() {
                   lineHeight: 1.65,
                   margin: '0 0 12px 0',
                 }}>
-                  Från nybyggnation och totalentreprenader till renoveringar och ombyggnationer i Uppland med omnejd.
+                  Från nybyggnation och totalentreprenader till renoveringar och tillbyggnader i Skåne med omnejd.
                 </p>
                 <Link
                   to="/tjanster"
@@ -481,11 +479,12 @@ export default function Home() {
                 padding: '36px',
               }}>
                 <img
-                  src="/logo.jpg"
-                  alt="JH Huskvalitet AB Logotyp"
+                  src="/logo-dark.png"
+                  alt="P.N Byggentreprenad AB Logotyp"
                   style={{
-                    width: '100%',
-                    height: '100%',
+                    width: '85%',
+                    height: 'auto',
+                    maxHeight: '160px',
                     objectFit: 'contain',
                     display: 'block',
                   }}
@@ -503,7 +502,7 @@ export default function Home() {
                   lineHeight: 1.2,
                   margin: '0 0 14px 0',
                 }}>
-                  Din lokala byggfirma i Uppland
+                  Din lokala byggpartner i Skåne
                 </h2>
               </ScrollReveal>
               <ScrollReveal animation="scale-x-left" delay={200} duration={0.6}>
@@ -516,16 +515,16 @@ export default function Home() {
                   lineHeight: 1.75,
                   margin: '0 0 32px 0',
                 }}>
-                  Bakom JH Huskvalitet står Viktor Johannesson. Vi tror på rak kommunikation, personlig kontakt och ett noggrant hantverk utan genvägar. Oavsett om du planerar en nybyggnation, tillbyggnad eller renovering finns vi med dig hela vägen från ritning till slutbesiktning.
+                  Bakom P.N Byggentreprenad AB står Oliver. Vi erbjuder kostnadseffektiva helhetslösningar till ert byggprojekt genom gedigen yrkeskunskap och personligt engagemang. Vi arbetar mot privatpersoner, bostadsrättsföreningar och kommersiella fastighetsbolag med högsta professionalism och yrkesstolthet.
                 </p>
               </ScrollReveal>
               <ScrollReveal animation="fade-right" duration={0.8} delay={200}>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   {[
-                    'En och samma kontaktperson från start till mål',
-                    'Tydliga offerter, fasta priser och direkt ROT avdrag',
-                    'Noggrant hantverk anpassat efter dina önskemål',
-                    'Lokal närvaro och snabb service i hela Uppland',
+                    'En och samma kontaktperson och projektledare från start till mål',
+                    'Kostnadseffektiva helhetslösningar med tydliga offerter och avtal',
+                    'Kvalitetssäkrat hantverk med skriftliga garantier och ansvarsförsäkring',
+                    'Gedigen erfarenhet mot både privatkunder, BRF och fastighetsbolag i Skåne',
                   ].map((item, i) => (
                     <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <CheckCircle2 size={24} color="var(--color-primary)" style={{ flexShrink: 0 }} />
@@ -551,136 +550,7 @@ export default function Home() {
       {/* ── SECTION 4: REFERENSER / PROJEKT ──────────────────────── */}
       <ProjectsGallery />
 
-      {/* ── SECTION 5: HUR DET FUNGERAR (3-STEGS PROCESS MED PILAR) ── */}
-      <section style={{
-        background: '#ffffff',
-        padding: 'clamp(60px, 8vw, 100px) 0',
-        borderTop: '1px solid #e2e8f0',
-      }}>
-        <div style={container}>
-          {/* Clean Authentic Split-Header */}
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'flex-end',
-            flexWrap: 'wrap',
-            gap: '24px',
-            marginBottom: '44px',
-          }}>
-            <div style={{ maxWidth: '540px' }}>
-              <ScrollReveal animation="fade-right">
-                <span style={{
-                  color: 'var(--color-primary)',
-                  fontWeight: 700,
-                  fontSize: '0.82rem',
-                  letterSpacing: '0.08em',
-                  textTransform: 'uppercase',
-                  display: 'block',
-                  marginBottom: '8px',
-                }}>
-                  Enkelt & tryggt
-                </span>
-                <h2 style={{
-                  color: 'var(--color-text-dark)',
-                  fontWeight: 800,
-                  fontSize: 'clamp(1.9rem, 3.4vw, 2.6rem)',
-                  letterSpacing: '-0.025em',
-                  margin: 0,
-                  lineHeight: 1.2,
-                }}>
-                  Så går det till från idé till verklighet
-                </h2>
-              </ScrollReveal>
-            </div>
-
-            <div style={{ maxWidth: '420px' }}>
-              <ScrollReveal animation="fade-left" delay={150}>
-                <p style={{
-                  color: 'var(--color-gray-600)',
-                  fontSize: '1rem',
-                  lineHeight: 1.65,
-                  margin: 0,
-                }}>
-                  Från första kontakt till nyckelfärdigt resultat i tre enkla steg med full transparens och trygghet.
-                </p>
-              </ScrollReveal>
-            </div>
-          </div>
-
-          <div className="steps-grid-wrapper" style={{
-            display: 'flex',
-            alignItems: 'flex-start',
-            justifyContent: 'center',
-            gap: '0',
-            textAlign: 'center',
-          }}>
-            {[
-              {
-                icon: Phone,
-                title: '1. Kontakta oss',
-                desc: 'Berätta om dina planer och idéer. Vi ger kostnadsfri rådgivning och bollar möjligheter för ditt projekt.',
-              },
-              {
-                icon: MapPin,
-                title: '2. Platsbesök & offert',
-                desc: 'Vi går igenom förutsättningarna på plats och tar fram en tydlig offert med fast pris och tidsplan.',
-              },
-              {
-                icon: Hammer,
-                title: '3. Vi bygger',
-                desc: 'Vi utför arbetet enligt överenskommelse med hög kvalitet, full insyn och trygga garantier.',
-              },
-            ].map(({ icon: Icon, title, desc }, i) => (
-              <div key={i} style={{ display: 'contents' }}>
-                <ScrollReveal animation="blur-in" delay={i * 150} duration={0.8}>
-                  <div className="step-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: '1', maxWidth: '280px' }}>
-                    <div style={{
-                      width: '70px',
-                      height: '70px',
-                      background: 'var(--color-primary)',
-                      borderRadius: 'var(--border-radius-md)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      marginBottom: '20px',
-                    }}>
-                      <Icon size={28} color="#1a1f2e" />
-                    </div>
-                    <h3 style={{
-                      color: 'var(--color-text-dark)',
-                      fontWeight: 700,
-                      fontSize: '1.15rem',
-                      margin: '0 0 12px 0',
-                    }}>
-                      {title}
-                    </h3>
-                    <p style={{
-                      color: 'var(--color-gray-600)',
-                      fontSize: '0.95rem',
-                      lineHeight: 1.65,
-                      margin: 0,
-                      maxWidth: '260px',
-                    }}>
-                      {desc}
-                    </p>
-                  </div>
-                </ScrollReveal>
-                {i < 2 && (
-                  <div className="step-arrow">
-                    <svg width="65" height="24" viewBox="0 0 65 24" fill="none" stroke="#C4C4C4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.75 }}>
-                      <path d="M 5 12 C 20 10, 40 10, 58 11" />
-                      <path d="M 49 5 C 52 8, 56 10, 58 11" />
-                      <path d="M 48 18 C 51 15, 56 12, 58 11" />
-                    </svg>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── SECTION 6: MID CTA ──────────────────────────────────── */}
+      {/* ── SECTION 5: MID CTA ──────────────────────────────────── */}
       <section style={{
         position: 'relative',
         padding: 'clamp(50px, 7vw, 80px) 0',
@@ -795,8 +665,8 @@ export default function Home() {
             {[
               {
                 name: 'Magnus Lindström',
-                location: 'Uppsala',
-                text: 'Vi anlitade JH Huskvalitet AB för en omfattande utbyggnad och nytt altandäck. Otroligt professionella från första platsbesöket till sista skruven. Hantverkarna höll rent och snyggt varje dag och tidsplanen hölls till punkt och pricka. Kan varmt rekommenderas!',
+                location: 'Malmö',
+                text: 'Vi anlitade P.N Byggentreprenad AB för en omfattande renovering och tillbyggnad. Otroligt professionella från första platsbesöket till sista detaljen. Kunskap, engagemang och en tidsplan som hölls till punkt och pricka. Kan varmt rekommenderas!',
                 stars: 5,
                 date: 'för 3 veckor sedan',
                 authorSub: 'Lokal guide • 12 omdömen',
@@ -804,8 +674,8 @@ export default function Home() {
               },
               {
                 name: 'Helena Bergqvist',
-                location: 'Enköping',
-                text: 'Riktigt nöjd med hjälpen vi fick vid vår husdränering och grundisolering. Bra dialog hela vägen, tydlig offert utan dolda kostnader och ett mycket noggrant utfört arbete. Känns tryggt inför höstrusket!',
+                location: 'Lund',
+                text: 'Riktigt nöjda med helhetslösningen från P.N Byggentreprenad AB. Bra dialog hela vägen, tydlig offert utan dolda kostnader och ett mycket noggrant utfört hantverk. Känns supertryggt!',
                 stars: 5,
                 date: 'för en månad sedan',
                 authorSub: '6 omdömen',
@@ -813,8 +683,8 @@ export default function Home() {
               },
               {
                 name: 'Fredrik Söderlund',
-                location: 'Norrtälje',
-                text: 'JH Huskvalitet hjälpte oss med tomtplanering, markarbete och stensättning runt vår nybyggda villa. Otroligt skickliga på att hitta smarta lösningar för nivåskillnaderna på tomten. Resultatet blev över all förväntan.',
+                location: 'Helsingborg',
+                text: 'P.N Byggentreprenad AB hjälpte vår BRF med entreprenad och ombyggnad. Skickliga hantverkare med fantastisk känsla för kvalitet och ordning. Resultatet blev över all förväntan.',
                 stars: 5,
                 date: 'för 2 månader sedan',
                 authorSub: 'Lokal guide • 19 omdömen',

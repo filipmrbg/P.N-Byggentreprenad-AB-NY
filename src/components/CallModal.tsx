@@ -10,10 +10,10 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
 
   const contacts = [
     {
-      name: 'JH Huskvalitet AB',
-      role: 'Kundtjänst och Offert',
-      phone: '072-210 10 75',
-      tel: 'tel:0722101075',
+      name: 'P.N Byggentreprenad AB',
+      role: 'Kundservice & Offertförfrågan',
+      phone: '072-386 83 75',
+      tel: 'tel:0723868375',
     },
   ];
 
@@ -103,7 +103,7 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
               fontFamily: 'var(--font-family)',
             }}
           >
-            Ring JH Huskvalitet AB
+            Ring P.N Byggentreprenad AB
           </h2>
           <p style={{ fontSize: '0.9rem', color: '#64748b', margin: 0, lineHeight: 1.5 }}>
             Kontakta oss direkt för rådgivning, frågor och kostnadsfri kalkyl.

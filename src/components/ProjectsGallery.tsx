@@ -13,33 +13,33 @@ interface ReferenceItem {
 const references: ReferenceItem[] = [
   {
     id: '1',
-    image: '/service-smahusbyggnation.webp',
-    alt: 'Nybyggnation i Uppland',
+    image: '/gallery-1.jpg',
+    alt: 'Nybyggnation och formsäkert trähusprojekt i Skåne | P.N Byggentreprenad AB',
   },
   {
     id: '2',
-    image: '/portfolio-extension.webp',
-    alt: 'Tillbyggnad på villa',
+    image: '/gallery-2.jpg',
+    alt: 'Gediget snickeri och stomresning med hög precision',
   },
   {
     id: '3',
-    image: '/gallery-deck.webp',
-    alt: 'Platsbyggt trädäck och altan',
+    image: '/gallery-3.jpg',
+    alt: 'Renovering och tillbyggnad med moderna och hållbara materialval',
   },
   {
     id: '4',
-    image: '/gallery-kitchen.webp',
-    alt: 'Köksrenovering och finsnickeri',
+    image: '/gallery-4.jpg',
+    alt: 'Fasadarbete, tak och exteriör förvandling för fastighet',
   },
   {
     id: '5',
-    image: '/gallery-bathroom.webp',
-    alt: 'Badrumsrenovering',
+    image: '/gallery-5.jpg',
+    alt: 'Finsnickeri och interiörfinish med omsorg om detaljer',
   },
   {
     id: '6',
-    image: '/portfolio-facade.webp',
-    alt: 'Fasadbyte och panelarbete',
+    image: '/gallery-6.jpg',
+    alt: 'Komplett helhetslösning och kvalitetssäkrad totalentreprenad i Skåne',
   },
 ];
 

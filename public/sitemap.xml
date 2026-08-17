@@ -1,56 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jhhuskvalitet.se/</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://p-n-byggentreprenad-ab.vercel.app/</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://jhhuskvalitet.se/tjanster</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://p-n-byggentreprenad-ab.vercel.app/tjanster</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jhhuskvalitet.se/tjanster/nybyggnation</loc>
-    <lastmod>2026-08-16</lastmod>
+    <loc>https://p-n-byggentreprenad-ab.vercel.app/tjanster#nybyggnation</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jhhuskvalitet.se/tjanster/renovering</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://p-n-byggentreprenad-ab.vercel.app/tjanster#renovering</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jhhuskvalitet.se/tjanster/ombyggnation</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://p-n-byggentreprenad-ab.vercel.app/tjanster#tillbyggnad</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jhhuskvalitet.se/tjanster/totalentreprenad</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://p-n-byggentreprenad-ab.vercel.app/tjanster#totalentreprenad</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://jhhuskvalitet.se/om-oss</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://p-n-byggentreprenad-ab.vercel.app/om-oss</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jhhuskvalitet.se/kontakt</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://p-n-byggentreprenad-ab.vercel.app/kontakt</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jhhuskvalitet.se/offert</loc>
-    <lastmod>2026-08-14</lastmod>
+    <loc>https://p-n-byggentreprenad-ab.vercel.app/offert</loc>
+    <lastmod>2026-08-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -14,8 +14,8 @@ const container: React.CSSProperties = {
 
 export default function ServicesOverview() {
   usePageTitle(
-    'Våra Tjänster | JH Huskvalitet AB Uppland',
-    'Utforska våra byggtjänster: Nybyggnation, Renovering, Ombyggnation och Totalentreprenad i Uppland med omnejd.'
+    'Våra Tjänster | P.N Byggentreprenad AB Skåne',
+    'Utforska våra byggtjänster: Nybyggnation, Renovering, Tillbyggnad och Totalentreprenad i Skåne för privatpersoner, BRF och fastighetsbolag.'
   );
 
   const { hash } = useLocation();
@@ -82,7 +82,7 @@ export default function ServicesOverview() {
               margin: '0 auto',
               lineHeight: 1.65,
             }}>
-              Vi på JH Huskvalitet AB erbjuder kompletta lösningar för din fastighet i Uppland med omnejd.
+              Vi på P.N Byggentreprenad AB erbjuder kostnadseffektiva helhetslösningar för era byggprojekt i Skåne med omnejd.
             </p>
           </ScrollReveal>
         </div>

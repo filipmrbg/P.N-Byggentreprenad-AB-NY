@@ -5,13 +5,13 @@ import images from '../data/images';
 const serviceLinks = [
   { label: 'Nybyggnation', href: '/tjanster#nybyggnation' },
   { label: 'Renovering', href: '/tjanster#renovering' },
-  { label: 'Ombyggnation', href: '/tjanster#ombyggnation' },
+  { label: 'Tillbyggnad', href: '/tjanster#tillbyggnad' },
   { label: 'Totalentreprenad', href: '/tjanster#totalentreprenad' },
 ];
 
 const socialIcons = [
-  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/jhhuskvalitetab' },
-  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61587212942833#' },
+  { Icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/p.n_byggentreprenad/' },
+  { Icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100090385661428' },
 ];
 
 export default function Footer() {
@@ -43,7 +43,7 @@ export default function Footer() {
                   display: 'inline-block',
                 }}>
                   <img
-                    src={images.logoDark?.url || '/logo.jpg'}
+                    src={images.logoDark?.url || '/logo-dark.png'}
                     alt={images.logoDark?.alt || images.logo.alt}
                     style={{
                       height: '75px',
@@ -56,7 +56,7 @@ export default function Footer() {
               </Link>
             </div>
             <p style={{ color: 'var(--color-gray-600)', fontSize: '0.9rem', lineHeight: 1.7, margin: '0 0 20px 0' }}>
-              Professionellt entreprenadföretag med Uppland som utgångspunkt. Vi utför alla typer av entreprenad- och byggarbeten med stor precision.
+              P.N Byggentreprenad AB erbjuder kostnadseffektiva helhetslösningar till ert byggprojekt i Skåne genom gedigen kunskap, kvalitet och personligt engagemang.
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
               {socialIcons.map(({ Icon, label, href }) => (
@@ -129,23 +129,23 @@ export default function Footer() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '0.95rem' }}>
 
               <a
-                href="mailto:JHHuskvalitet@outlook.com"
+                href="mailto:info@pnbyggentreprenad.se"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Mail size={16} strokeWidth={2} />
                 </div>
-                <span>JHHuskvalitet@outlook.com</span>
+                <span>info@pnbyggentreprenad.se</span>
               </a>
 
               <a
-                href="tel:0722101075"
+                href="tel:0723868375"
                 className="footer-contact-item"
               >
                 <div className="footer-contact-icon">
                   <Phone size={16} strokeWidth={2} />
                 </div>
-                <span>072-210 10 75</span>
+                <span>072-386 83 75</span>
               </a>
 
               <div
@@ -154,7 +154,7 @@ export default function Footer() {
                 <div className="footer-contact-icon">
                   <MapPin size={16} strokeWidth={2} />
                 </div>
-                <span>Uppland som utgångspunkt</span>
+                <span>Skåne med omnejd</span>
               </div>
             </div>
           </div>
@@ -176,7 +176,9 @@ export default function Footer() {
           }}
         >
           <div style={{ display: 'flex', gap: '12px', alignItems: 'center', color: 'var(--color-gray-600)', fontSize: '0.875rem', flexWrap: 'wrap' }}>
-            <span>© 2026 - JH Huskvalitet AB</span>
+            <span>© 2026 P.N Byggentreprenad AB</span>
+            <span>•</span>
+            <span>Org.nr: 559414-5095</span>
           </div>
         </div>
       </div>

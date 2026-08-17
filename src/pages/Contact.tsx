@@ -13,20 +13,20 @@ const container: React.CSSProperties = {
 
 const faqItems = [
   {
-    question: 'Arbetar ni med ROT avdrag?',
-    answer: 'Ja, vi hanterar ROT avdrag och ser till att faktureringen sker korrekt. Arbeten som dränering och inkoppling av VA till befintliga hus berättigar till avdraget.',
+    question: 'Hur fungerar ROT avdraget vid renovering och ombyggnad?',
+    answer: 'Som privatperson kan du dra av 30% av arbetskostnaden upp till 50 000 kr per person och år. Vi administrerar hela avdraget direkt mot Skatteverket på din faktura.',
   },
   {
     question: 'Hur lång tid tar det att få ett prisförslag?',
-    answer: 'Vi brukar återkomma med en offert inom 1 till 3 arbetsdagar efter platsbesöket, beroende på projektets omfattning.',
+    answer: 'Vi återkopplar normalt med en tydlig och specificerad offert inom 1 till 3 arbetsdagar efter platsbesöket.',
   },
   {
-    question: 'Tar ni på er jobb utanför Uppland?',
-    answer: 'Uppland är vår utgångspunkt, men vi kan ta uppdrag i närliggande områden vid större projekt. Hör av dig så berättar vi mer.',
+    question: 'Vilket geografiskt område täcker ni?',
+    answer: 'Skåne med omnejd är vår primära utgångspunkt. Vi utför byggprojekt, renoveringar och entreprenader över hela regionen för privatpersoner, BRF och fastighetsbolag.',
   },
   {
-    question: 'Kan jag boka ett platsbesök direkt?',
-    answer: 'Absolut! Skicka ett meddelande via formuläret eller ring oss, så bokar vi in ett kostnadsfritt platsbesök som passar dig.',
+    question: 'Kan jag boka ett förutsättningslöst platsbesök?',
+    answer: 'Självklart! Skicka ett meddelande via formuläret eller ring oss direkt så bokar vi in ett kostnadsfritt platsbesök.',
   },
 ];
 
@@ -57,8 +57,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement>) 
 
 export default function Contact() {
   usePageTitle(
-    'Kontakta JH Huskvalitet AB | Offert och Rådgivning',
-    'Hör av dig till JH Huskvalitet AB för frågor, kostnadsfria platsbesök eller offert gällande ditt nästa projekt med Uppland som utgångspunkt.'
+    'Kontakta P.N Byggentreprenad AB | Offert och Rådgivning i Skåne',
+    'Hör av dig till P.N Byggentreprenad AB i Skåne för frågor, kostnadsfria platsbesök eller offert gällande nybyggnation, renovering, tillbyggnad eller totalentreprenad.'
   );
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -123,7 +123,7 @@ export default function Contact() {
                 Så når du oss
               </h2>
               <p style={{ color: 'var(--color-gray-600)', fontSize: '1rem', lineHeight: 1.8, margin: 0 }}>
-                Du kan nå oss via formuläret, telefon eller e-post. Oavsett om det gäller ett stort eller litet entreprenad- eller markarbete hjälper vi dig gärna.
+                Du kan nå oss via formuläret, telefon eller e-post. Oavsett om det gäller ett stort eller litet byggprojekt hjälper vi dig gärna med rådgivning och personlig service.
               </p>
 
               <div style={{ marginTop: '40px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
@@ -146,12 +146,12 @@ export default function Contact() {
                     </p>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                       <a
-                        href="tel:0722101075"
+                        href="tel:0723868375"
                         style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                         onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
                         onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                       >
-                        072-210 10 75
+                        072-386 83 75
                       </a>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ export default function Contact() {
                       Plats / Utgångspunkt
                     </p>
                     <p style={{ margin: 0, color: 'var(--color-gray-600)', fontSize: '0.95rem', lineHeight: 1.5 }}>
-                      Uppland som utgångspunkt
+                      Skåne med omnejd
                     </p>
                   </div>
                 </div>
@@ -198,12 +198,12 @@ export default function Contact() {
                       E-post
                     </p>
                     <a
-                      href="mailto:JHHuskvalitet@outlook.com"
+                      href="mailto:info@pnbyggentreprenad.se"
                       style={{ color: 'var(--color-gray-600)', fontSize: '0.95rem', textDecoration: 'none', lineHeight: 1.5, transition: 'color 0.2s ease' }}
                       onMouseEnter={e => (e.currentTarget.style.color = 'var(--color-primary)')}
                       onMouseLeave={e => (e.currentTarget.style.color = 'var(--color-gray-600)')}
                     >
-                      JHHuskvalitet@outlook.com
+                      info@pnbyggentreprenad.se
                     </a>
                   </div>
                 </div>

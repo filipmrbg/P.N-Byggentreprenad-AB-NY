@@ -1,16 +1,16 @@
 {
-  "name": "JH Huskvalitet AB",
-  "short_name": "JH Huskvalitet",
-  "description": "Professionellt entreprenad- och byggföretag med Uppland som utgångspunkt.",
+  "name": "P.N Byggentreprenad AB",
+  "short_name": "P.N Byggentreprenad",
+  "description": "Vi erbjuder kostnadseffektiva helhetslösningar till ert byggprojekt genom kunskap och engagemang i Skåne.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ea580c",
   "icons": [
     {
-      "src": "/logo.jpg",
-      "sizes": "1024x1024",
-      "type": "image/jpeg"
+      "src": "/logo.png",
+      "sizes": "1264x491",
+      "type": "image/png"
     }
   ]
 }

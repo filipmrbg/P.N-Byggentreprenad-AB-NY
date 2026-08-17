@@ -14,15 +14,15 @@ const container: React.CSSProperties = {
 const faqItems = [
   {
     question: 'Kostar platsbesöket något?',
-    answer: 'Nej, platsbesök och offert är alltid kostnadsfritt. Vi besöker din fastighet, mäter höjder, kollar förutsättningar och tar fram ett tydligt prisförslag helt utan förbindelser.',
+    answer: 'Nej, platsbesök och offert är alltid helt kostnadsfritt. Vi besöker er fastighet i Skåne med omnejd, går igenom era förutsättningar och tar fram ett tydligt och kostnadseffektivt prisförslag helt utan förbindelser.',
   },
   {
     question: 'Hur snabbt kan ni påbörja projektet?',
-    answer: 'Det styrs av projektets storlek samt vår nuvarande kapacitet och planering. Mindre jobb kan vi ofta påbörja inom två veckor, medan större projekt planeras in med god framförhållning.',
+    answer: 'Det styrs av projektets omfattning samt aktuell orderingång. Mindre renovering och snickeriuppdrag kan vi ofta påbörja med kort varsel, medan större byggnationer planeras in strukturerat.',
   },
   {
-    question: 'Fungerar ROT avdrag för era tjänster?',
-    answer: 'Ja, för godkända renoverings och ombyggnadsarbeten på din bostad drar vi av ROT avdraget på 30 % av arbetskostnaden direkt på fakturan.',
+    question: 'Fungerar ROT avdraget för era tjänster?',
+    answer: 'Ja, för godkända renoveringar och tillbyggnadsarbeten på ditt småhus eller bostadsrätt drar vi av 30% av arbetskostnaden direkt på fakturan.',
   },
 ];
 
@@ -53,8 +53,8 @@ function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | 
 
 export default function Quote() {
   usePageTitle(
-    'Begär offert | JH Huskvalitet AB',
-    'Beskriv ditt projekt och begär en kostnadsfri offert för entreprenad- och byggarbeten med Uppland som utgångspunkt.'
+    'Begär offert | P.N Byggentreprenad AB',
+    'Beskriv ditt projekt och begär en kostnadsfri offert för bygg, renovering och totalentreprenad i Skåne med omnejd.'
   );
   const [name, setName]       = useState('');
   const [email, setEmail]     = useState('');
@@ -141,7 +141,7 @@ export default function Quote() {
                   </label>
                   <input
                     type="text"
-                    placeholder="Ditt för- och efternamn"
+                    placeholder="Ditt för och efternamn"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     style={inputStyle}
@@ -191,9 +191,9 @@ export default function Quote() {
                     <option value="">Välj tjänst...</option>
                     <option value="nybyggnation">Nybyggnation</option>
                     <option value="renovering">Renovering</option>
-                    <option value="ombyggnation">Ombyggnation</option>
+                    <option value="tillbyggnad">Tillbyggnad</option>
                     <option value="totalentreprenad">Totalentreprenad</option>
-                    <option value="annat">Annat projekt</option>
+                    <option value="annat">Annat byggprojekt</option>
                   </select>
 
                   <label style={{ display: 'block', marginBottom: '4px', fontSize: '0.85rem', fontWeight: 600, color: 'var(--color-text-dark)' }}>

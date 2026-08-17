@@ -9,7 +9,7 @@ export function usePageTitle(title: string, description?: string) {
     document.title = title;
 
     // 2. Update Description
-    const defaultDesc = "JH Huskvalitet AB utför alla typer av entreprenad- och byggarbeten med Uppland som utgångspunkt. Kontakta oss för en kostnadsfri offert!";
+    const defaultDesc = "P.N Byggentreprenad AB erbjuder kostnadseffektiva helhetslösningar inom bygg, nybyggnation, renovering, tillbyggnad och totalentreprenad i Skåne för privatkunder, BRF och fastighetsbolag.";
     const activeDesc = description || defaultDesc;
     
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -37,7 +37,7 @@ export function usePageTitle(title: string, description?: string) {
     if (twitterDescription) twitterDescription.setAttribute('content', activeDesc);
 
     // 5. Update Canonical Link
-    const absoluteUrl = `https://jhhuskvalitet.se${pathname === '/' ? '' : pathname}`;
+    const absoluteUrl = `https://p-n-byggentreprenad-ab.vercel.app${pathname === '/' ? '' : pathname}`;
     let canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
       canonical.setAttribute('href', absoluteUrl);

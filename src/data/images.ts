@@ -75,69 +75,75 @@ export interface SiteImages {
 const images: SiteImages = {
   logo: {
     url: '/logo-white.png',
-    alt: 'JH Huskvalitet AB',
+    alt: 'P.N Byggentreprenad AB',
   },
   logoDark: {
-    url: '/logo.jpg',
-    alt: 'JH Huskvalitet AB',
+    url: '/logo-dark.png',
+    alt: 'P.N Byggentreprenad AB',
   },
 
   hero: {
     background: {
       url: '/hero-main.webp',
-      alt: 'Entreprenad och markarbete pågår',
+      alt: 'P.N Byggentreprenad AB byggnation och entreprenad i Skåne',
     },
   },
 
   services: {
     nybyggnation: {
       url: '/service-smahusbyggnation.webp',
-      alt: 'Nybyggnation och trähus i Uppland',
+      alt: 'Nybyggnation i Skåne',
     },
     smahusbyggnation: {
       url: '/service-smahusbyggnation.webp',
-      alt: 'Nybyggnation och trähus i Uppland',
+      alt: 'Nybyggnation i Skåne',
     },
     renovering: {
       url: '/service-renovering.webp',
-      alt: 'Husrenovering och golvläggning',
+      alt: 'Renovering och finsnickeri i Skåne',
+    },
+    tillbyggnad: {
+      url: '/service-ombyggnation.webp',
+      alt: 'Tillbyggnad och utbyggnad i Skåne',
     },
     ombyggnation: {
       url: '/service-ombyggnation.webp',
-      alt: 'Ombyggnation och tillbyggnad på villa',
+      alt: 'Tillbyggnad och ombyggnation i Skåne',
     },
     totalentreprenad: {
       url: '/service-totalentreprenad.webp',
-      alt: 'Totalentreprenad och aktiv byggarbetsplats',
+      alt: 'Totalentreprenad och projektledning i Skåne',
     },
   },
 
   gallery: [
-    { url: '/gallery-external-1.webp', alt: 'JH Huskvalitet AB arbete pågår 1' },
-    { url: '/gallery-external-2.webp', alt: 'JH Huskvalitet AB arbete pågår 2' },
-    { url: '/gallery-external-4.webp', alt: 'JH Huskvalitet AB arbete pågår 4' },
-    { url: '/gallery-external-3.webp', alt: 'JH Huskvalitet AB arbete pågår 5' },
+    { url: '/gallery-1.jpg', alt: 'P.N Byggentreprenad AB Nybyggnation i Skåne' },
+    { url: '/gallery-2.jpg', alt: 'P.N Byggentreprenad AB Stomresning och snickeri' },
+    { url: '/gallery-3.jpg', alt: 'P.N Byggentreprenad AB Renovering och byggarbete' },
+    { url: '/gallery-4.jpg', alt: 'P.N Byggentreprenad AB Fasad och takarbete' },
+    { url: '/gallery-5.jpg', alt: 'P.N Byggentreprenad AB Finsnickeri och interiör' },
+    { url: '/gallery-6.jpg', alt: 'P.N Byggentreprenad AB Färdigställt projekt' },
   ],
 
   cta: {
     banner: {
       url: '/hero-main.webp',
-      alt: 'JH Huskvalitet AB projekt',
+      alt: 'P.N Byggentreprenad AB projekt',
     },
     midSection: {
       url: '/hero-main.webp',
-      alt: 'Byggarbetsplats',
+      alt: 'Byggarbetsplats i Skåne',
     },
   },
 
   about: {
     hero: {
-      url: '/logo-dark.png',
-      alt: 'JH Huskvalitet AB logotyp',
+      url: '/about-main.jpg',
+      alt: 'P.N Byggentreprenad AB verksamhet och hantverk',
     },
     teamMember: {
-      url: '/logo-white.png',
-      alt: 'Teammedlem',
+      url: '/logo-dark.png',
+      alt: 'P.N Byggentreprenad AB medarbetare',
     },
   },
 
@@ -153,68 +159,78 @@ const images: SiteImages = {
 
   portfolio: [
     {
-      image: { url: '/gallery-external-1.webp', alt: 'JH Huskvalitet AB projekt 1' },
-      title: 'Projekt 1',
-      category: '',
+      image: { url: '/gallery-1.jpg', alt: 'P.N Byggentreprenad AB Nybyggnation' },
+      title: 'Nybyggnation',
+      category: 'Villa & Fastighet',
     },
     {
-      image: { url: '/gallery-external-2.webp', alt: 'JH Huskvalitet AB projekt 2' },
-      title: 'Projekt 2',
-      category: '',
+      image: { url: '/gallery-2.jpg', alt: 'P.N Byggentreprenad AB Stomresning' },
+      title: 'Stommontering',
+      category: 'Konstruktion',
     },
     {
-      image: { url: '/gallery-external-4.webp', alt: 'JH Huskvalitet AB projekt 4' },
-      title: 'Projekt 4',
-      category: '',
+      image: { url: '/gallery-3.jpg', alt: 'P.N Byggentreprenad AB Tillbyggnad' },
+      title: 'Tillbyggnad',
+      category: 'Utbyggnad',
     },
     {
-      image: { url: '/gallery-external-3.webp', alt: 'JH Huskvalitet AB projekt 5' },
-      title: 'Projekt 5',
-      category: '',
+      image: { url: '/gallery-4.jpg', alt: 'P.N Byggentreprenad AB Exteriörrenovering' },
+      title: 'Fasad & Tak',
+      category: 'Exteriört',
+    },
+    {
+      image: { url: '/gallery-5.jpg', alt: 'P.N Byggentreprenad AB Finsnickeri' },
+      title: 'Finsnickeri',
+      category: 'Interiört',
+    },
+    {
+      image: { url: '/gallery-6.jpg', alt: 'P.N Byggentreprenad AB Totalentreprenad' },
+      title: 'Helhetsentreprenad',
+      category: 'Totalentreprenad',
     },
   ],
 
   servicePages: {
     markarbete: {
       hero: {
-        url: '/service-markarbete.webp',
-        alt: 'Markarbete och schaktning',
+        url: '/service-smahusbyggnation.webp',
+        alt: 'Byggnation och stomme',
       },
       section1: {
-        url: '/service-markarbete.webp',
-        alt: 'Förberedelse för tomtplanering',
+        url: '/service-smahusbyggnation.webp',
+        alt: 'Byggnation i Skåne',
       },
       section2: {
         url: '/hero-main.webp',
-        alt: 'Grävmaskin på arbetsplats',
+        alt: 'Arbetsplats i Skåne',
       },
     },
     dranering: {
       hero: {
-        url: '/service-dranering.webp',
-        alt: 'Dränering av husgrund',
+        url: '/service-renovering.webp',
+        alt: 'Renoveringsarbete',
       },
       section1: {
-        url: '/service-dranering.webp',
-        alt: 'Montering av Isodrän fuktskydd',
+        url: '/service-renovering.webp',
+        alt: 'Finsnickeri',
       },
       section2: {
         url: '/hero-main.webp',
-        alt: 'Arbete med dräneringsslangar',
+        alt: 'Arbete på plats',
       },
     },
     betong: {
       hero: {
-        url: '/service-betong.webp',
-        alt: 'Gjutning av betongplatta',
+        url: '/service-totalentreprenad.webp',
+        alt: 'Totalentreprenad',
       },
       section1: {
-        url: '/service-betong.webp',
-        alt: 'Stenläggning och armering',
+        url: '/service-totalentreprenad.webp',
+        alt: 'Projektledning',
       },
       section2: {
         url: '/hero-main.webp',
-        alt: 'Färdig betonggrund',
+        alt: 'Färdigställt resultat',
       },
     },
   },
