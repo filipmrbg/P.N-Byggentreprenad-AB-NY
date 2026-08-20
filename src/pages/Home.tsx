@@ -140,14 +140,11 @@ export default function Home() {
             inset: '-20% 0',
             zIndex: 0,
             willChange: 'transform',
-            backgroundImage: 'url(/hero-video-poster.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
           }}
         >
           <video
             ref={heroVideoRef}
-            poster="/hero-video-poster.jpg"
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260820_081248_66150cf2-bbd6-44e7-b22e-488a6adb2e61.mp4"
             preload="auto"
             autoPlay
             loop
@@ -160,8 +157,7 @@ export default function Home() {
               objectPosition: 'center',
             }}
           >
-            <source src="/hero-drone-desktop.mp4" media="(min-width: 768px)" type="video/mp4" />
-            <source src="/hero-drone-mobile.mp4" type="video/mp4" />
+            <source src="https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260820_081248_66150cf2-bbd6-44e7-b22e-488a6adb2e61.mp4" type="video/mp4" />
           </video>
         </div>
         {/* Dark overlay */}
