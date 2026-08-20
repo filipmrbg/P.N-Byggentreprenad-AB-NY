@@ -287,13 +287,15 @@ body {
 
 @media (max-width: 768px) {
   .hero-home-section {
-    padding-top: 90px;
+    min-height: 100svh;
+    padding-top: 80px;
     padding-bottom: 50px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .hero-home-content {
-    padding-top: 25px;
+    padding-top: 10px;
     padding-bottom: 25px;
+    transform: translateY(-18px);
   }
 }
