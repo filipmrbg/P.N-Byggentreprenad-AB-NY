@@ -49,8 +49,8 @@ const homeFaqItems = [
 
 export default function Home() {
   usePageTitle(
-    'P.N Byggentreprenad AB | Bygg & Totalentreprenad i Skåne',
-    'P.N Byggentreprenad AB erbjuder kostnadseffektiva helhetslösningar inom bygg, nybyggnation, renovering, tillbyggnad och totalentreprenad i Skåne för privatkunder, BRF och fastighetsbolag.'
+    'P.N Byggentreprenad AB | Bygg & Entreprenad i Skåne',
+    'P.N Byggentreprenad AB erbjuder kostnadseffektiva helhetslösningar inom bygg, nybyggnation, renovering, tillbyggnad och entreprenad i Skåne för privatkunder, BRF och fastighetsbolag.'
   );
 
   const heroBgRef = useRef<HTMLDivElement>(null);
