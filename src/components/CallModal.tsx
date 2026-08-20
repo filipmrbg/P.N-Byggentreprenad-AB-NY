@@ -84,7 +84,7 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
             style={{
               width: '56px',
               height: '56px',
-              background: 'rgba(234, 88, 12, 0.12)',
+              background: 'rgba(37, 99, 235, 0.12)',
               borderRadius: '16px',
               display: 'flex',
               alignItems: 'center',
@@ -131,7 +131,7 @@ export default function CallModal({ isOpen, onClose }: CallModalProps) {
                 e.currentTarget.style.background = '#ffffff';
                 e.currentTarget.style.borderColor = 'var(--color-primary)';
                 e.currentTarget.style.transform = 'translateY(-2px)';
-                e.currentTarget.style.boxShadow = '0 10px 25px rgba(234, 88, 12, 0.18)';
+                e.currentTarget.style.boxShadow = '0 10px 25px rgba(37, 99, 235, 0.18)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = '#f8fafc';

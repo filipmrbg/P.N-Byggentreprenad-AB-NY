@@ -44,6 +44,7 @@ export interface SiteImages {
   };
   about: {
     hero: ImageSlot;
+    background?: ImageSlot;
     teamMember: ImageSlot;
   };
   whyChooseUs: ImageSlot;
@@ -140,6 +141,10 @@ const images: SiteImages = {
     hero: {
       url: '/about-main.jpg',
       alt: 'P.N Byggentreprenad AB verksamhet och hantverk',
+    },
+    background: {
+      url: '/hero-about.webp',
+      alt: 'P.N Byggentreprenad AB hantverk och arkitektur',
     },
     teamMember: {
       url: '/logo-dark.png',

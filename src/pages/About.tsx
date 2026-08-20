@@ -39,14 +39,14 @@ export default function About() {
       {/* ── SECTION A: HERO HEADER ────────────────────────────── */}
       <section style={{
         position: 'relative',
-        backgroundImage: 'url(/hero-main.webp)',
+        backgroundImage: `url(${images.about.background?.url || '/hero-about.webp'})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         paddingTop: '140px',
         paddingBottom: '60px',
         textAlign: 'center',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(15, 23, 42, 0.72)' }} />
         <div style={{ ...container, position: 'relative', zIndex: 1 }}>
           <div>
             <ScrollReveal animation="blur-in">
@@ -140,7 +140,7 @@ export default function About() {
                   }}>
                     P.N Byggentreprenad AB är ett modernt och professionellt byggföretag i Skåne. Vi erbjuder kostnadseffektiva helhetslösningar till ert byggprojekt genom djup yrkeskunskap, personligt engagemang och högsta hantverksstandard.
                   </p>
-                  
+
                   <h3 style={{ fontSize: '1.25rem', fontWeight: 700, color: 'var(--color-text-dark)', margin: '28px 0 12px 0' }}>
                     Byggnation för privatpersoner, BRF och fastighetsbolag
                   </h3>
@@ -163,7 +163,7 @@ export default function About() {
 
                   {/* Founder Quote Card */}
                   <div style={{
-                    background: 'rgba(234, 88, 12, 0.05)',
+                    background: 'rgba(37, 99, 235, 0.05)',
                     borderLeft: '4px solid var(--color-primary)',
                     padding: '24px 28px',
                     borderRadius: '0 16px 16px 0',
@@ -214,7 +214,7 @@ export default function About() {
                 display: 'block',
                 marginBottom: '8px',
               }}>
-                Vårt team
+                P.N Byggentreprenad AB
               </span>
               <h2 style={{
                 color: 'var(--color-text-dark)',
@@ -223,7 +223,7 @@ export default function About() {
                 letterSpacing: '-0.03em',
                 margin: '0 0 12px 0',
               }}>
-                Möt hantverkarna bakom P.N Byggentreprenad AB
+                Vårt team
               </h2>
             </ScrollReveal>
             <ScrollReveal animation="fade-up" delay={100}>
@@ -231,10 +231,10 @@ export default function About() {
                 color: 'var(--color-gray-600)',
                 fontSize: '1rem',
                 lineHeight: 1.7,
-                maxWidth: '580px',
+                maxWidth: '620px',
                 margin: '0 auto',
               }}>
-                Ett engagerat och erfaret team som brinner för kvalitet, noggrannhet och professionellt utförda byggprojekt i Skåne.
+                Våra projektledare och yrkeshantverkare säkerställer högsta kvalitet, trygghet och precision genom hela byggprocessen.
               </p>
             </ScrollReveal>
           </div>
@@ -265,7 +265,7 @@ export default function About() {
                     width: '68px',
                     height: '68px',
                     borderRadius: '50%',
-                    background: 'rgba(234, 88, 12, 0.12)',
+                    background: 'rgba(37, 99, 235, 0.12)',
                     color: 'var(--color-primary)',
                     display: 'flex',
                     alignItems: 'center',

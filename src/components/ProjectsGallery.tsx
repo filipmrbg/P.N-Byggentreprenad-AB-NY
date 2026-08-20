@@ -81,7 +81,7 @@ export default function ProjectsGallery() {
     <section
       id="projekt"
       style={{
-        background: 'radial-gradient(ellipse at 50% 40%, rgba(234, 88, 12, 0.03) 0%, transparent 65%), #f8fafc',
+        background: 'radial-gradient(ellipse at 50% 40%, rgba(37, 99, 235, 0.03) 0%, transparent 65%), #f8fafc',
         padding: 'clamp(58px, 7.5vw, 92px) 0',
         position: 'relative',
         borderTop: '1px solid #e2e8f0',
@@ -301,8 +301,8 @@ export default function ProjectsGallery() {
 
         .collage-item.hovered {
           transform: translateY(-5px);
-          border-color: rgba(234, 88, 12, 0.35);
-          box-shadow: 0 20px 40px -8px rgba(15, 23, 42, 0.16), 0 0 0 1px rgba(234, 88, 12, 0.2);
+          border-color: rgba(37, 99, 235, 0.35);
+          box-shadow: 0 20px 40px -8px rgba(15, 23, 42, 0.16), 0 0 0 1px rgba(37, 99, 235, 0.2);
           z-index: 2;
         }
 

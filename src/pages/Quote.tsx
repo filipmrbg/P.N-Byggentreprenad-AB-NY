@@ -44,7 +44,7 @@ const inputStyle: React.CSSProperties = {
 
 function focusInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
   e.currentTarget.style.borderColor = 'var(--color-primary)';
-  e.currentTarget.style.boxShadow = '0 0 0 3px rgba(234, 88, 12, 0.15)';
+  e.currentTarget.style.boxShadow = '0 0 0 3px rgba(37, 99, 235, 0.15)';
 }
 function blurInput(e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) {
   e.currentTarget.style.borderColor = '#e5e7eb';
@@ -229,7 +229,7 @@ export default function Quote() {
                       transition: 'transform 0.2s ease, opacity 0.2s ease',
                     }}
                   >
-                    <Send size={18} /> SKICKA OFFERTFÖRFRÅGAN
+                    <Send size={18} /> Skicka offertförfrågan
                   </button>
                 </form>
               </div>

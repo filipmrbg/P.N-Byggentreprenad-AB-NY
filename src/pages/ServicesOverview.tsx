@@ -3,6 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import ScrollReveal from '../components/ScrollReveal';
 import CTABanner from '../components/CTABanner';
+import ServiceIcon from '../components/ServiceIcons';
 import { usePageTitle } from '../hooks/usePageTitle';
 import services, { ServiceItem } from '../data/services';
 
@@ -194,16 +195,24 @@ export default function ServicesOverview() {
                   {/* Content Column */}
                   <div style={{ order: isEven ? 2 : 1 }}>
                     <ScrollReveal animation={isEven ? 'fade-left' : 'fade-right'}>
-                      <h2 style={{
-                        color: 'var(--color-text-dark)',
-                        fontWeight: 800,
-                        fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
-                        letterSpacing: '-0.03em',
-                        margin: '0 0 16px 0',
-                        lineHeight: 1.2,
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '16px',
+                        marginBottom: '16px',
                       }}>
-                        {svc.title}
-                      </h2>
+                        <ServiceIcon name={svc.slug} size={52} />
+                        <h2 style={{
+                          color: 'var(--color-text-dark)',
+                          fontWeight: 800,
+                          fontSize: 'clamp(1.8rem, 3vw, 2.5rem)',
+                          letterSpacing: '-0.03em',
+                          margin: 0,
+                          lineHeight: 1.2,
+                        }}>
+                          {svc.title}
+                        </h2>
+                      </div>
                       <p style={{
                         color: 'var(--color-gray-600)',
                         fontSize: '1.02rem',
@@ -228,7 +237,7 @@ export default function ServicesOverview() {
                           padding: '14px 28px',
                           borderRadius: 'var(--border-radius-pill)',
                           textDecoration: 'none',
-                          boxShadow: '0 4px 14px rgba(234, 88, 12, 0.35)',
+                          boxShadow: '0 4px 14px rgba(37, 99, 235, 0.35)',
                           transition: 'all 0.25s ease',
                         }}
                         onMouseEnter={(e) => {

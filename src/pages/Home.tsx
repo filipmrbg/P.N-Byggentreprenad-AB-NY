@@ -14,6 +14,7 @@ import SocialBanner from '../components/SocialBanner';
 import ProjectsGallery from '../components/ProjectsGallery';
 import FAQAccordion from '../components/FAQAccordion';
 import CallModal from '../components/CallModal';
+import ServiceIcon from '../components/ServiceIcons';
 import { usePageTitle } from '../hooks/usePageTitle';
 import services, { ServiceItem } from '../data/services';
 
@@ -143,7 +144,7 @@ export default function Home() {
         >
           <video
             ref={heroVideoRef}
-            src="https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260816_182956_5f9788b4-1956-469f-bd36-25622b10a0ef.mp4"
+            src="https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260820_081155_fd184f33-52d7-492f-ab06-5c01be236bff.mp4"
             preload="auto"
             autoPlay
             loop
@@ -156,7 +157,7 @@ export default function Home() {
               objectPosition: 'center',
             }}
           >
-            <source src="https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260816_182956_5f9788b4-1956-469f-bd36-25622b10a0ef.mp4" type="video/mp4" />
+            <source src="https://d8j0ntlcm91z4.cloudfront.net/user_3G5LlmMYORSdAk8SxzXrK2S0Is5/hf_20260820_081155_fd184f33-52d7-492f-ab06-5c01be236bff.mp4" type="video/mp4" />
           </video>
         </div>
         {/* Dark overlay */}
@@ -178,22 +179,6 @@ export default function Home() {
             paddingTop: '60px',
             paddingBottom: '40px',
           }}>
-            {/* Top Location Line */}
-            <ScrollReveal animation="fade-down" delay={0} duration={0.6}>
-              <span style={{
-                fontFamily: "'Oswald', 'Outfit', sans-serif",
-                letterSpacing: '0.28em',
-                textTransform: 'uppercase',
-                fontSize: 'clamp(0.75rem, 1.4vw, 0.85rem)',
-                fontWeight: 600,
-                color: 'rgba(255, 255, 255, 0.85)',
-                display: 'block',
-                marginBottom: '16px',
-              }}>
-                SKÅNE • MALMÖ • HELSINGBORG • LUND
-              </span>
-            </ScrollReveal>
-
             {/* Huge Bold Headline (H1) using Bebas Neue font */}
             <ScrollReveal animation="fade-up" delay={100} duration={0.8}>
               <h1 style={{
@@ -367,7 +352,7 @@ export default function Home() {
                     const card = e.currentTarget;
                     card.style.transform = 'translateY(-6px)';
                     card.style.boxShadow = '0 20px 40px rgba(15, 23, 42, 0.12)';
-                    card.style.borderColor = 'rgba(234, 88, 12, 0.3)';
+                    card.style.borderColor = 'rgba(37, 99, 235, 0.3)';
                     const img = card.querySelector('.card-photo') as HTMLElement;
                     if (img) img.style.transform = 'scale(1.06)';
                   }}
@@ -416,6 +401,14 @@ export default function Home() {
                     flexDirection: 'column',
                     flex: 1,
                   }}>
+                    <div style={{
+                      marginBottom: '16px',
+                      display: 'flex',
+                      alignItems: 'center',
+                    }}>
+                      <ServiceIcon name={svc.slug} size={46} />
+                    </div>
+
                     <h3 style={{
                       color: 'var(--color-text-dark)',
                       fontWeight: 700,
@@ -429,11 +422,23 @@ export default function Home() {
                       color: 'var(--color-gray-600)',
                       fontSize: '0.93rem',
                       lineHeight: 1.65,
-                      margin: 0,
+                      margin: '0 0 18px 0',
                       flex: 1,
                     }}>
                       {svc.shortDescription}
                     </p>
+
+                    <div style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      color: 'var(--color-text-dark)',
+                      fontWeight: 700,
+                      fontSize: '0.88rem',
+                      marginTop: 'auto',
+                    }}>
+                      <span style={{ textDecoration: 'none' }}>Läs mer</span>
+                    </div>
                   </div>
                 </Link>
               </ScrollReveal>
@@ -713,7 +718,7 @@ export default function Home() {
         <div style={{
           position: 'absolute',
           inset: 0,
-          background: 'radial-gradient(ellipse at 85% 25%, rgba(234, 88, 12, 0.08) 0%, transparent 60%)',
+          background: 'radial-gradient(ellipse at 85% 25%, rgba(37, 99, 235, 0.08) 0%, transparent 60%)',
           pointerEvents: 'none',
         }} />
         <div style={{ ...container, position: 'relative', zIndex: 1 }}>

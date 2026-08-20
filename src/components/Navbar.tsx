@@ -103,29 +103,18 @@ export default function Navbar() {
     document.body.style.overflow = '';
 
     if (href.includes('#')) {
-      const [path, hashId] = href.split('#');
-      if (location.pathname === path) {
+      const [pathPart, hashId] = href.split('#');
+      const targetPath = pathPart === '' ? '/' : pathPart;
+
+      if (location.pathname === targetPath) {
         const el = document.getElementById(hashId);
         if (el) {
-          const y = el.getBoundingClientRect().top + window.pageYOffset - 100;
+          const y = el.getBoundingClientRect().top + window.pageYOffset - 85;
           window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
           window.history.pushState(null, '', `#${hashId}`);
         }
       } else {
-        navigate(href);
-      }
-    } else if (href.startsWith('/#')) {
-      const id = href.slice(2);
-      if (location.pathname === '/') {
-        setTimeout(() => {
-          const el = document.getElementById(id);
-          if (el) {
-            const y = el.getBoundingClientRect().top + window.pageYOffset - 90;
-            window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
-          }
-        }, 100);
-      } else {
-        navigate('/', { state: { scrollTo: id } });
+        navigate(href, { state: { scrollTo: hashId } });
       }
     } else {
       navigate(href);
@@ -366,19 +355,19 @@ export default function Navbar() {
               transition: 'all 0.3s ease',
               display: 'inline-block',
               cursor: 'pointer',
-              boxShadow: '0 4px 16px rgba(234, 88, 12, 0.35)',
+              boxShadow: '0 4px 16px rgba(37, 99, 235, 0.35)',
             }}
             onMouseEnter={e => {
               const el = e.currentTarget as HTMLElement;
               el.style.background = 'var(--color-primary-hover)';
               el.style.transform = 'translateY(-2px)';
-              el.style.boxShadow = '0 8px 24px rgba(234, 88, 12, 0.5)';
+              el.style.boxShadow = '0 8px 24px rgba(37, 99, 235, 0.5)';
             }}
             onMouseLeave={e => {
               const el = e.currentTarget as HTMLElement;
               el.style.background = 'var(--color-primary)';
               el.style.transform = 'translateY(0)';
-              el.style.boxShadow = '0 4px 16px rgba(234, 88, 12, 0.35)';
+              el.style.boxShadow = '0 4px 16px rgba(37, 99, 235, 0.35)';
             }}
           >
             <span className="offert-full">Begär offert</span>
