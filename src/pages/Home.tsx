@@ -122,16 +122,7 @@ export default function Home() {
     <main style={{ fontFamily: 'var(--font-family)' }}>
 
       {/* ── SECTION 1: HERO ─────────────────────────────────────── */}
-      <section style={{
-        position: 'relative',
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        overflow: 'hidden',
-        paddingTop: '120px',
-        paddingBottom: '80px',
-        boxSizing: 'border-box',
-      }}>
+      <section className="hero-home-section">
         {/* Parallax Background Video */}
         <div
           ref={heroBgRef}
@@ -169,16 +160,7 @@ export default function Home() {
         }} />
 
         <div style={{ ...container, position: 'relative', zIndex: 2, width: '100%', display: 'flex', justifyContent: 'flex-start' }}>
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            textAlign: 'left',
-            maxWidth: '680px',
-            margin: '0',
-            paddingTop: '60px',
-            paddingBottom: '40px',
-          }}>
+          <div className="hero-home-content">
             {/* Huge Bold Headline (H1) using Bebas Neue font */}
             <ScrollReveal animation="fade-up" delay={100} duration={0.8}>
               <h1 style={{
